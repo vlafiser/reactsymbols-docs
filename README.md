@@ -198,11 +198,9 @@ You can also pass all `<input>` props - check ReactJS documentation
 **text** | string | null | Text description below input
 **textWithIcon** | string | null | Text description below input will include `Icon` when used with `level` prop
 **type** | string | text | Define type of input (`text`, `password`...)
-**iconName** | string | null | Specifies an icon name - check [Icon](components.md?id=icon) component for all options
+**iconName** | string | null | Specifies an icon name - check [Icon](?id=icon) component for all options
 **iconSize** | number | 18 | Specifies an icon size
 **iconOnRight** | bool | false | `Icon` in input will be aligned to the right
-**valid** | bool | false | Will apply `success` color level on the Input component
-**invalid** | bool | false | Will apply `danger` color level on the Input component
 **disabled** | bool | false | Determines whether the Input should be disabled
 **className** | string | null | Your own `className` for better customization
 **style** | object, array | null | Your own `style` properties for better Input customization
@@ -213,7 +211,6 @@ You can also pass all `<input>` props - check ReactJS documentation
 
 ```reactjs
 <SKInput
-  valid={true}
   type='text'
   textWithIcon='This is little text information'
   id='input1'
@@ -500,7 +497,7 @@ You can also pass all props supported defaultly by `<input type='radio'/>` - che
 
 ## Textarea
 
-<br>
+You can also pass all `<textarea>` props - check ReactJS documentation
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -509,8 +506,6 @@ You can also pass all props supported defaultly by `<input type='radio'/>` - che
 **level** | string | null | One of: `success`, `danger`, `warning`, `info`
 **text** | string | null | Text description below Textarea
 **textWithIcon** | string | null | Text description below Textarea will include `Icon` when used with `level` prop
-**valid** | bool | false | Will apply `success` color level on the component
-**invalid** | bool | false | Will apply `danger` color level on the component
 **disabled** | bool | false | Determines whether the component should be disabled
 **className** | string | null | Your own `className` for better customization
 **style** | object, array | null | Your own `style` properties for better customization
@@ -522,7 +517,6 @@ You can also pass all props supported defaultly by `<input type='radio'/>` - che
 ```reactjs
 <SKTextarea
   id='textarea'
-  valid={true}
   textWithIcon='Your text information below textarea'
   placeholder='Your Placeholder'
   type='text'
