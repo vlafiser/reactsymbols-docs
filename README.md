@@ -1,7 +1,35 @@
 
 # **Information**
 
+<br>
+
 # **Getting started**
+
+<br>
+
+### How to setup ReactSymbols React UI Kit into your project
+
+<br>
+
+### How to build SASS files to be able change color schema of most of component by one color definition
+
+If you want to customize colors of your styles based on your brand colors, you can do it easily by modifying sass variables at **./styles/sass/CONSTANTS.sass**. Just go there and modify variables as you need. 
+
+Once you are finished with that, you have to compile sass files into css again. Probably the easiest way is to use npm module *node-sass-chokidar*. 
+If you don't have this module in your project, just type following command in root of your project:
+
+`npm install node-sass-chokidar`
+
+This command will install module and all its dependencies. After that just build sass with following command (from root of your project ofc):
+
+`./node_modules/.bin/node-sass-chokidar ./<path to react symbols folder>/styles/sass/ -o ./<path to react symbols folder again>/styles/css/`
+
+And lastly refresh your project and you should see React Symbols Kit in theme of your brand colors. 
+
+<br>
+### How variables in CONSTANTS works and what you can setup there
+
+<br>
 
 # **Components**
 
