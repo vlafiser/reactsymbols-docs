@@ -40,7 +40,7 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
 **PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
-**visible** | bool | false | Determines whether the Alert should be visible
+**visible** | bool | `false` | Determines whether the Alert should be visible
 **level** | string | null | One of: `success`, `danger`, `warning`, `info`
 **width** | number | null | Fixed width of Alert (in pixels)
 **iconName** | string | null | Specifies an icon name - check [Icon](?id=icon) component
@@ -111,34 +111,50 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 
 ---
 
-<br>
-<br>
-
 ## Checkbox
 
-You can pass all `Checkbox` props - check ReactJS documentation
+You can pass all supported `<input type='checkbox' />` `props` as well as `props` listed below:
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
-**checked** | bool | false | 
+**PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
+**checked** | bool | `false` | 
 **value** | string, number | null | Defines a value associated with the component
-**label** | string | null | Definition of `<label>` for the Checkbox component
-**iconColor** | string | null | Specifies an icon color
-**disabled** | bool | false | Determines whether the Button should be disabled
-**className** | string | null | Your own `className` for better customization
-**style** | object, array | null | Your own `style` properties for better Button customization
+**label** | string | null | Defines `<label />` element of component
+**background** | string | null | Specifies an background color
+**color** | string | null | Specifies an icon color
+**disabled** | bool | `false` | Determines whether the component should be disabled
+**className** | string | null | Add `className` on container of component
+**style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 
-<br>
-
-#### Example of use:
+<div style="display: block; text-align: center;"><img src="http://localhost:3000/images/checkbox.png" style="margin:auto;width: 86px;"/></div>
 
 ```reactjs
-<SKCheckbox
-  checked={true}
-  label='By check of this box you accept with Privacy Policy'
-  value='checkbox1'
-  name='checkbox1'
-  onChange={this.onChange.bind(this)}
+/* Black un-checked Checkbox with label */
+<RSCheckbox
+	label='Label'
+	value='checkbox1'
+	background={Styles.blackGradient}
+	onChange={this.onChange.bind(this)}
+/>
+
+/* Black checked Checkbox with label */
+<RSCheckbox
+	checked
+	label='Label'
+	value='checkbox2'
+	background={Styles.blackGradient}
+	onChange={this.onChange.bind(this)}
+/>
+
+/* Black checked, disabled Checkbox with label */
+<RSCheckbox
+	disabled
+	checked
+	label='Label'
+	value='checkbox3'
+	background={Styles.blackGradient}
+	onChange={this.onChange.bind(this)}
 />
 ```
 
@@ -146,27 +162,28 @@ You can pass all `Checkbox` props - check ReactJS documentation
 <br>
 
 ---
-
-<br>
-<br>
 
 ## Color Card
 
-<br>
-
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
-**label** | string | Color | Text description label of ColorCard component
-**color** | string | #000000 | Defines a color value of the ColorCard component
+**PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
+**label** | string | `Primary Color` | Text label with name of presented color
+**color** | string | `Styles.primaryColor` | Defines a color value of the component
 
-<br>
-
-#### Example of use:
+<div style="display: block; text-align: center;"><img src="http://localhost:3000/images/color-card.png" style="margin:auto;width: 281px;"/></div>
 
 ```reactjs
-<SKColorCard
-  label='Red color'
-  color={Styles.redColor}
+/* Color Card - Mint Color */
+<RSColorCard
+	label='Mint'
+	color={Styles.mintColor}
+/>
+
+/* Color Card - Gray Color */
+<RSColorCard
+	label='Gray'
+	color={Styles.grayColor}
 />
 ```
 
@@ -175,27 +192,20 @@ You can pass all `Checkbox` props - check ReactJS documentation
 
 ---
 
-<br>
-<br>
-
 ## Form Label
 
-You can also pass all `<label>` props - check ReactJS documentation
+You can pass all supported `<label />` `props` as well as `props` listed below:
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
-**id** | string | null | Defines HTML `id` property of FormLabel component
-**className** | string | null | Your own `className` for better customization
-
-<br>
-
-#### Example of use:
+**PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
+**id** | string | null | Defines `id` of `<input />` etc.
+**className** | string | null | Add `className` on container of component
 
 ```reactjs
-<SKFormLabel
-  id={this.props.id}>
-  This is label
-</SKFormLabel>
+<RSFormLabel id={this.props.id}>
+  Input Label
+</RSFormLabel>
 ```
 
 <br>
@@ -208,7 +218,30 @@ You can also pass all `<label>` props - check ReactJS documentation
 
 ## Icon
 
-#### ⏱ COMING SOON
+You are able to use all supported icons from popular icon packs like **Font Awesome** and ** Material Design**.
+
+List of icons:
+- [Material Design](https://material.io/icons/)
+- [Font Awesome](http://fontawesome.io/icons/)
+
+Use their original name to get the icon you want. **For example: `FaTrash` or `MdError`**
+
+*You need to have installed `react-icons` in your project to be able to use our `RSIcon` component. Check [install guide]() and install all required packages if you missed something at the beginning.*
+
+<span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
+:--- | :--- | :--- | :---
+**PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
+**name** | string | null | Specifies an icon name
+**size** | number | `18` | Specifies an icon size
+**color** | string | `Styles.primaryTextColor` | Specifies an icon color
+
+```reactjs
+<RSIcon
+  name='MdError'
+  size={26}
+  color={Styles.redColor}
+/>
+```
 
 <br>
 <br>
@@ -220,34 +253,42 @@ You can also pass all `<label>` props - check ReactJS documentation
 
 ## Input
 
-You can also pass all `<input>` props - check ReactJS documentation
+You can pass all supported `<input />` `props` as well as `props` listed below:
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
-**id** | string | null | Defines HTML `id` property of Input component
-**label** | string | null | Definition of `<label>` for the Checkbox component
+**PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
+**label** | string | null | Defines `<label />` element of component
 **level** | string | null | One of: `success`, `danger`, `warning`, `info`
 **text** | string | null | Text description below input
-**textWithIcon** | string | null | Text description below input will include `Icon` when used with `level` prop
-**type** | string | text | Define type of input (`text`, `password`...)
-**iconName** | string | null | Specifies an icon name - check [Icon](?id=icon) component for all options
-**iconSize** | number | 18 | Specifies an icon size
-**iconOnRight** | bool | false | `Icon` in input will be aligned to the right
-**disabled** | bool | false | Determines whether the Input should be disabled
-**className** | string | null | Your own `className` for better customization
-**style** | object, array | null | Your own `style` properties for better Input customization
+**textWithIcon** | string | null | Text description below input with `Icon` when used with `level` prop
+**iconName** | string | null | Specifies an icon name - check [Icon](?id=icon) component
+**iconSize** | number | `20` | Specifies an icon size
+**iconOnRight** | bool | `false` | `Icon` inside of input is aligned to the right
+**disabled** | bool | `false` | Determines whether the component should be disabled
+**className** | string | null | Add `className` on container of component
+**style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 
-<br>
-
-#### Example of use:
+<div style="display: block; text-align: center;"><img src="http://localhost:3000/images/input.png" style="margin:auto;width: 520px;"/></div>
 
 ```reactjs
-<SKInput
-  type='text'
-  textWithIcon='This is little text information'
-  id='input1'
-  placeholder='Your Placeholder'
-  onChange={this.onChange.bind(this)}
+/* Input with Icon */
+<RSInput
+	iconName='FaCalendar'
+	iconSize={14}
+	placeholder='Value'
+	type='text'
+	onChange={this.onChange.bind(this)}
+/>
+
+/* Input with Label, Text information and set SUCCESS level */
+<RSInput
+	label='Input Label'
+    level='success'
+    text='Positive Message'
+    placeholder='Value'
+	type='text'
+	onChange={this.onChange.bind(this)}
 />
 ```
 
