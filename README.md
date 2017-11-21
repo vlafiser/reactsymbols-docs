@@ -1,19 +1,21 @@
+# About ReactSymbols 
 
-# **Information**
+#### Files naming
+Naming of all Components and their SASS files starts with `RS` for example `RSButton.js` or `RSButton.scss`. We don't want to create mess into your app or fight names of your existing files. It's also good for identification of code from ReactSymbols UI Kit.
 
-<br>
+# Project Setup
 
-# **Getting started**
+Let's see how easy and fast is setup process of ReactSymbols UI Kit.
 
-<br>
+## Building ReactJS app from scratch
 
-### How to setup ReactSymbols React UI Kit into your project
+## Into existing projects
 
-<br>
+
 
 ### How to build SASS files to be able change color schema of most of component by one color definition
 
-If you want to customize colors of your styles based on your brand colors, you can do it easily by modifying sass variables at **./styles/sass/CONSTANTS.sass**. Just go there and modify variables as you need. 
+If you want to customize colors of your styles based on your brand colors, you can do it easily by modifying sass variables at **./styles/sass/RSDefaults.sass**. Just go there and modify variables as you need. 
 
 Once you are finished with that, you have to compile sass files into css again. Probably the easiest way is to use npm module *node-sass-chokidar*. 
 If you don't have this module in your project, just type following command in root of your project:
@@ -35,31 +37,29 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 
 ## Alert
 
-<br>
-
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
-**visible** | bool | false | Determines whether the Button should be visible
-**level** | string | info | One of: `success`, `danger`, `warning`, `info`
-**width** | string | null | Fixed width of alert in **pixels** (default is 100% - following parent's width)
-**iconName** | string | null | Specifies an icon name - check [Icon](components.md?id=icon) component for all options
+**PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
+**visible** | bool | false | Determines whether the Alert should be visible
+**level** | string | null | One of: `success`, `danger`, `warning`, `info`
+**width** | number | null | Fixed width of Alert (in pixels)
+**iconName** | string | null | Specifies an icon name - check [Icon](?id=icon) component
 **iconSize** | number | null | Specifies an icon size
 **iconColor** | string | null | Specifies an icon color
-**className** | string | null | Your own `className` for better customization
-**style** | object, array | null | Your own `style` properties for better customization
+**background** | string | null | Specifies an background color of component
+**className** | string | null | Add `className` on container of component
+**style** | object, array | null | Add `style` properties for better customization
 
-<br>
-
-#### Example of use:
+<div style="display: block; text-align: center;"><img src="http://localhost:3000/images/alert.png" style="margin:auto;width: 558px;"/></div>
 
 ```reactjs
-<SKAlert
-  visible={this.state.showAlert}
-  level='danger'
-  requestClose={this.requestAlertClose.bind(this)}
-  className='alertMargin'>
-  <p>Success! This is positive Alert.</p>
-</SKAlert>
+<RSAlert
+	visible={this.state.showAlert}
+	iconName='MdFlight'
+	background={Styles.turquoiseGradient}
+	requestClose={this.closeAlert.bind(this)}>
+	<p>Get ready your boarding pass! Boarding starts at 09:45AM.</p>
+</RSAlert>
 ```
 
 <br>
@@ -67,38 +67,42 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 
 ---
 
-<br>
-<br>
-
 ## Button
-
-<br>
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
-**size** | string | medium | One of: `small`, `medium`, `large`
+**PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
+**size** | string | `medium` | One of: `small`, `medium`, `large`
 **level** | string | null | One of: `success`, `danger`, `warning`, `info`
-**background** | string | null | Background color of the Button component
-**color** | string | null | Label color of the Button component
-**fullWidth** | bool | false | It follows width of parent it it's `true`
-**value** | string | null | Text value of Button component
-**iconName** | string | null | Specifies an icon name - check [Icon](components.md?id=icon) component for all options
-**iconSize** | number | 18 | Specifies an icon size
+**background** | string | null | Specifies an background color of component
+**color** | string | null | Specifies an color of label
+**fullWidth** | bool | `false` | Set width on 100% - it follow parent's width then
+**value** | string | null | Text value of component
+**iconName** | string | null | Specifies an icon name - check [Icon](?id=icon) component
+**iconSize** | number | `18` | Specifies an icon size
 **iconColor** | string | null | Specifies an icon color
-**disabled** | bool | false | Determines whether the Button should be disabled
-**className** | string | null | Your own `className` for better customization
-**style** | object, array | null | Your own `style` properties for better Button customization
-**valueStyle** | object, array | null | Your own `style` properties for better text value Button customization
+**disabled** | bool | `false` | Determines whether the component should be disabled
+**className** | string | null | Add `className` on container of component
+**style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
+**valueStyle** | object, array | null | Allows you to style label ex. `textTransform: uppercase;`
 
-<br>
-
-#### Example of use:
+<div style="display: block; text-align: center;"><img src="http://localhost:3000/images/button.png" style="margin:auto;width: 241px;"/></div>
 
 ```reactjs
-<SKButton
-  name='button-alert'
-  value='Open Alert'
-  onClick={this.openAlert.bind(this)}
+/* Orange button */
+<RSButton
+	value='Button'
+	background={Styles.orangeGradient}
+	onClick={this.onClick.bind(this)}
+/>
+
+/* Red button with icon */
+<RSButton
+	value='Delete'
+	iconName='FaTrash'
+	iconSize={15}
+	background={Styles.redColor}
+	onClick={this.onClick.bind(this)}
 />
 ```
 
