@@ -1,12 +1,12 @@
-# ReactSymbols Documentation
+# Documentation
 
-Welcome on offical documentation of ReactSymbols UI Kit which is made for ReactJS applications and you can easily use each and all of the component in your project. We are pushing it with lot of predefined colors so it's perfectly fit for prototyping of your IU for your new feature of page.
+Welcome on offical documentation of `ReactSymbols React UI Kit` which is made for `ReactJS` applications and you can easily use each and all of the component in your project. We are pushing it with lot of predefined colors so it's perfectly fit for *prototyping* of your IU for your new feature of page.
 
 <br>
 
 **GENERAL INFORMATION:**
 
-**1.0.0** (22.11.2017) - Initial release version
+SOON
 
 <br>
 
@@ -18,7 +18,7 @@ Welcome on offical documentation of ReactSymbols UI Kit which is made for ReactJ
 
 **CHANGELOG:**
 
-**1.0.0** (22.11.2017) - Initial release version
+`1.0.0` [22.11.2017] - Initial release version
 
 <br>
 
