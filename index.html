@@ -30,6 +30,13 @@
       table tbody tr:first-child td strong {
         color: rgba(247,152,28,1);
       }
+      .sidebar>h1 {
+        background: url(http://localhost:3000/images/logo.png) no-repeat 15px 0;
+        background-size: 220px auto;
+        text-indent: -9999px;
+        overflow: hidden;
+        height: 90px;
+      }
   </style>
 </head>
 <body>
@@ -40,12 +47,25 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
+      name: 'ReactSymbols',
       repo: '',
-      maxLevel: 3
+      maxLevel: 3,
+      ga: 'UA-XXXXX-Y',
+      search: {
+        noData: {
+          '/': 'No results!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': 'Search'
+        }
+      },
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
       //loadSidebar: true,
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
 </body>
 </html>
