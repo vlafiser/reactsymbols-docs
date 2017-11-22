@@ -5,7 +5,30 @@
 
 
 
-### Demo app
+### Run our Demo app
+
+#### 1)
+In Terminal go to the folder where our `ReactSymbolsDemoApp` is placed
+```
+cd ./path/ReactSymbolsKit/ReactSymbolsDemoApp
+```
+
+#### 2)
+Install dependencies via NPM
+```
+npm install
+```
+
+#### 3)
+Then start your localhost and build our demo app easily by
+```
+npm start
+```
+
+#### 4)
+Enjoy our beautiful demo app and play around with it! :)
+
+----
 
 ### Use in your project
 
@@ -14,24 +37,26 @@ Be sure that **you have installed all required NPM packages** you need for smoot
 npm install prop-types react-icons classnames react-select --save
 ```
 
-1) Move `ReactSymbolsKit.js` and `ReactSymbolsKit.css` into your `src` folder
-2) Link Component you want to use and files you moved into the project before:
+#### 1)
+Move `ReactSymbolsKit.js` and `ReactSymbolsKit.css` into your `src` folder
+
+#### 2)
+Link Component you want to use and files you moved into the project before:
 ```javascript
 import './ReactSymbolsKit.css'
-import { RSInput, RSButton } from './ReactSymbolsKit.js'
+import { RSButton } from './ReactSymbolsKit.js'
 ```
-2) Link Component you want to use and files you moved into the project before:
+
+#### 3) Define component you want to use. For example:
 ```javascript
-import './ReactSymbolsKit.css'
-import { RSInput, RSButton } from './ReactSymbolsKit.js'
+<RSButton value='Your first RSButton' />
 ```
-3) Define component you want to use. For example:
-```javascript
-<RSButton
-	value='Your first RSButton'
-	onClick={this.onClick.bind(this)}
-/>
-```
+
+#### 4) See your first ReactSymbols component
+<img src="http://docs.reactsymbols.com/images/first-component.png" style="width: 558px;"/>
+
+
+If you like video even more than 3 simple steps in text, check it here:
 
 
 #### Files naming
