@@ -1,4 +1,4 @@
-# About ReactSymbols 
+# About ReactSymbols
 
 #### Files naming
 Naming of all Components and their SASS files starts with `RS` for example `RSButton.js` or `RSButton.scss`. We don't want to create mess into your app or fight names of your existing files. It's also good for identification of code from ReactSymbols UI Kit.
@@ -18,9 +18,9 @@ Let's see how easy and fast is setup process of ReactSymbols UI Kit.
 
 ### How to build SASS files to be able change color schema of most of component by one color definition
 
-If you want to customize colors of your styles based on your brand colors, you can do it easily by modifying sass variables at **./styles/sass/RSDefaults.sass**. Just go there and modify variables as you need. 
+If you want to customize colors of your styles based on your brand colors, you can do it easily by modifying sass variables at **./styles/sass/RSDefaults.sass**. Just go there and modify variables as you need.
 
-Once you are finished with that, you have to compile sass files into css again. Probably the easiest way is to use npm module *node-sass-chokidar*. 
+Once you are finished with that, you have to compile sass files into css again. Probably the easiest way is to use npm module *node-sass-chokidar*.
 If you don't have this module in your project, just type following command in root of your project:
 
 `npm install node-sass-chokidar`
@@ -29,7 +29,7 @@ This command will install module and all its dependencies. After that just build
 
 `./node_modules/.bin/node-sass-chokidar ./<path to react symbols folder>/styles/sass/ -o ./<path to react symbols folder again>/styles/css/`
 
-And lastly refresh your project and you should see React Symbols Kit in theme of your brand colors. 
+And lastly refresh your project and you should see React Symbols Kit in theme of your brand colors.
 
 <br>
 ### How variables in CONSTANTS works and what you can setup there
@@ -59,6 +59,7 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 **background** | string | null | Specifies an background color of component
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Add `style` properties for better customization
+**requestClose** | function | null | Function which will be called on cross button click to close the alert
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/alert.png" style="margin:auto;width: 558px;"/></div>
 
@@ -97,6 +98,7 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 **valueStyle** | object, array | null | Allows you to style label ex. `textTransform: uppercase;`
+| | | | **Any other additional props will be passed down to `button` element (eg. onClick)**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/button.png" style="margin:auto;width: 241px;"/></div>
 
@@ -132,7 +134,7 @@ You can pass all supported `<input type='checkbox' />` `props` as well as `props
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
 **PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
-**checked** | bool | `false` | 
+**checked** | bool | `false` |
 **value** | string, number | null | Defines a value associated with the component
 **label** | string | null | Defines `<label />` element of component
 **background** | string | null | Specifies an background color
@@ -140,6 +142,7 @@ You can pass all supported `<input type='checkbox' />` `props` as well as `props
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
+**onChange** | function | null | Function called on checkbox state change with args **value, checkedState, label**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/checkbox.png" style="margin:auto;width: 86px;"/></div>
 
@@ -286,6 +289,8 @@ You can pass all supported `<input />` `props` as well as `props` listed below:
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
+**onChange** | function | null | Called on its value update, the value passed as an argument
+| | | | **Any other additional props will be passed down to `input` element**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/input.png" style="margin:auto;width: 520px;"/></div>
 
@@ -336,19 +341,19 @@ You can pass all supported `<input />` `props` as well as `props` listed below:
 /* Orange gradient on background */
 <RSLabel
 	text='Swift'
-	background={Styles.orangeGradient}	
+	background={Styles.orangeGradient}
 />
 
 /* Fusion gradient on background */
 <RSLabel
 	text='ReactSymbols UI Kit Release'
-	background={Styles.fusionGradient}	
+	background={Styles.fusionGradient}
 />
 
 /* Black gradient on background */
 <RSLabel
 	text='Admin'
-	background={Styles.blackGradient}	
+	background={Styles.blackGradient}
 />
 ```
 
@@ -449,6 +454,7 @@ You can pass all supported `<input type='radio' />` `props` as well as `props` l
 **color** | string | null | Specifies an color of bullet when `checked`
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
+| | | | **Any other props will be passed down to `radio input` element (eg. onChange)**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/radio.png" style="margin:auto;width: 97px;"/></div>
 
@@ -492,7 +498,7 @@ You can pass all supported `<input type='radio' />` `props` as well as `props` l
 :--- | :--- | :--- | :---
 **PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
 **selectedValue** | string, number | null | Value of selected child - `Radio`
-**onChange** | func | null | onChange
+**onChange** | function | null | Called when an active radio element has been changed, with radio value as an argument
 <br>
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/radio.png" style="margin:auto;width: 97px;"/></div>
@@ -597,6 +603,7 @@ imageOption (option) {
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
+| | | | **Any other props will be passed down to `a` element**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/social-button.png" style="margin:auto;width: 141px;"/></div>
 
@@ -631,7 +638,7 @@ imageOption (option) {
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
 **PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
-**checked** | bool | false | 
+**checked** | bool | false |
 **value** | string, number | null | Defines a value associated with the component
 **label** | string | null | Defines `<label />` element of component
 **background** | string | null | Specifies an background color of component
@@ -639,6 +646,7 @@ imageOption (option) {
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
+**onChange** | function | null | Called on switch state change, **label** and **boolean state** passed as function args
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/switch.png" style="margin:auto;width: 344px;"/></div>
 
@@ -689,6 +697,8 @@ You can pass all supported `<textarea />` `props` as well as `props` listed belo
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
+**onChange** | function | null | Called on its value update, the value passed as an argument
+| | | | **Any other additional props will be passed down to `textarea` element**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/textarea.png" style="margin:auto;width: 521px;"/></div>
 
