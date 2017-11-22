@@ -1,11 +1,39 @@
-# About ReactSymbols
+# ReactSymbols Documentation
 
-## Setup
+Welcome on offical documentation of ReactSymbols UI Kit which is made for ReactJS applications and you can easily use each and all of the component in your project. We are pushing it with lot of predefined colors so it's perfectly fit for prototyping of your IU for your new feature of page.
 
+<br>
 
+**GENERAL INFORMATION:**
 
+**1.0.0** (22.11.2017) - Initial release version
 
-### Run our Demo app
+<br>
+
+**PLANNED UPDATES:**
+- Adding support of SASS files and be able to change color variables to make it fit with your brand by one line code of CSS color.
+- Adding more components (different types of buttons, dropdown,...)
+
+<br>
+
+**CHANGELOG:**
+
+**1.0.0** (22.11.2017) - Initial release version
+
+<br>
+
+**STRUCTURE OF FOLDER:**
+<img src="http://localhost:3000/images/folder-structure.png" style="display:block;width: 186px;margin-top:20px;"/>
+
+<br>
+
+---
+
+<br>
+
+# **Setup**
+
+## Run our Demo app
 
 **1)** In Terminal go to the folder where our `ReactSymbolsDemoApp` is placed
 ```
@@ -27,82 +55,61 @@ Enjoy our beautiful demo app and play around with it! :)
 
 ----
 
-### Use in your project
+## Use in your project
 
 Be sure that **you have installed all required NPM packages** you need for smooth setup of ReactSymbols UI Kit. Install all of them by one simple line:
 ```
 npm install prop-types react-icons classnames react-select --save
 ```
-
 <br>
 
-**1)** Move `ReactSymbolsKit.js` and `ReactSymbolsKit.css` into your `src` folder
+**1)** Move `ReactSymbolsKit.js` and `ReactSymbolsKit.css` from folder you downloaded into your `src` folder in your project.
+<img src="http://localhost:3000/images/move-to-folder.png" style="display:block;width: 197px;margin-top:20px;"/>
 
-**2)** Link Component you want to use and files you moved into the project before:
+**2)** Link the files you moved in during prevous step and define which components you like to import:
 ```javascript
 import './ReactSymbolsKit.css'
 import { RSButton } from './ReactSymbolsKit.js'
 ```
 
-**3)** Define component you want to use. For example:
+**3)** Let's call the component you want to use! All available props are available separately for each component below in this documentation. For example:
 ```javascript
 <RSButton value='Your first RSButton' />
 ```
 
 **4)** You made first ReactSymbols component!
-<img src="http://docs.reactsymbols.com/images/first-component.png" style="width: 558px;"/>
-
-----
-
-
-
-
-#### Files naming
-Naming of all Components and their SASS files starts with `RS` for example `RSButton.js` or `RSButton.scss`. We don't want to create mess into your app or fight names of your existing files. It's also good for identification of code from ReactSymbols UI Kit.
-
-#### UI Kit Preview
-Imediatelly after setup you can see all components live on Example page. It's mix of variant's of each component. Basic action handelings are there coded as well, so you can use it how you want and you can see how to pass all the props and functions correctly.
-
-# Project Setup
-
-Let's see how easy and fast is setup process of ReactSymbols UI Kit.
-
-## Building ReactJS app from scratch
-
-## Into existing projects
-
-
-
-### How to build SASS files to be able change color schema of most of component by one color definition
-
-If you want to customize colors of your styles based on your brand colors, you can do it easily by modifying sass variables at **./styles/sass/RSDefaults.sass**. Just go there and modify variables as you need.
-
-Once you are finished with that, you have to compile sass files into css again. Probably the easiest way is to use npm module *node-sass-chokidar*.
-If you don't have this module in your project, just type following command in root of your project:
-
-`npm install node-sass-chokidar`
-
-This command will install module and all its dependencies. After that just build sass with following command (from root of your project ofc):
-
-`./node_modules/.bin/node-sass-chokidar ./<path to react symbols folder>/styles/sass/ -o ./<path to react symbols folder again>/styles/css/`
-
-And lastly refresh your project and you should see React Symbols Kit in theme of your brand colors.
-
-<br>
-### How variables in CONSTANTS works and what you can setup there
+<img src="http://docs.reactsymbols.com/images/first-component.png" style="display:block;width: 558px;"/>
 
 <br>
 
 -----
 
-# EVERYTHING BELOW SHOULD BE FINAL
-👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼👇🏼
-
------
+<br>
 
 # **Components**
 
-## Alert
+List of available components:
+- [RSAlert](?id=RSAlert)
+- [RSButton](?id=RSButton)
+- [RSCheckbox](?id=RSCheckbox)
+- [RSColorCard](?id=RSColorCard)
+- [RSFormLabel](?id=RSFormLabel)
+- [RSIcon](?id=RSIcon)
+- [RSInput](?id=RSInput)
+- [RSLabel](?id=RSLabel)
+- [RSNotification](?id=RSNotification)
+- [RSProgressBar](?id=RSProgressBar)
+- [RSRadio](?id=RSRadio)
+- [RSRadioGroup](?id=RSRadioGroup)
+- [RSSelect](?id=RSSelect)
+- [RSSelectOption](?id=RSSelectOption)
+- [RSSocialButton](?id=RSSocialButton)
+- [RSSwitch](?id=RSSwitch)
+- [RSTextarea](?id=RSTextarea)
+
+-----
+
+## RSAlert
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -116,7 +123,7 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 **background** | string | null | Specifies an background color of component
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Add `style` properties for better customization
-**requestClose** | function | null | Function which will be called on cross button click to close the alert
+**requestClose** | func | null | Function which will be called on cross button click to close the alert
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/alert.png" style="margin:auto;width: 558px;"/></div>
 
@@ -137,7 +144,7 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 
 ---
 
-## Button
+## RSButton
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -155,7 +162,7 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 **valueStyle** | object, array | null | Allows you to style label ex. `textTransform: uppercase;`
-| | | | **Any other additional props will be passed down to `button` element (eg. onClick)**
+| | | **Any other additional props will be passed down to `button` element (eg. onClick)**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/button.png" style="margin:auto;width: 241px;"/></div>
 
@@ -184,9 +191,7 @@ And lastly refresh your project and you should see React Symbols Kit in theme of
 
 ---
 
-## Checkbox
-
-You can pass all supported `<input type='checkbox' />` `props` as well as `props` listed below:
+## RSCheckbox
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -199,7 +204,7 @@ You can pass all supported `<input type='checkbox' />` `props` as well as `props
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
-**onChange** | function | null | Function called on checkbox state change with args **value, checkedState, label**
+**onChange** | func | null | Function called on checkbox state change with args **value, checkedState, label**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/checkbox.png" style="margin:auto;width: 86px;"/></div>
 
@@ -239,7 +244,7 @@ You can pass all supported `<input type='checkbox' />` `props` as well as `props
 
 ---
 
-## Color Card
+## RSColorCard
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -270,15 +275,14 @@ You can pass all supported `<input type='checkbox' />` `props` as well as `props
 
 ---
 
-## Form Label
-
-You can pass all supported `<label />` `props` as well as `props` listed below:
+## RSFormLabel
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
 **PROP** | **TYPE** | **DEFAULT** | **DESCRIPTION**
 **id** | string | null | Defines `id` of `<input />` etc.
 **className** | string | null | Add `className` on container of component
+| | | **Any other additional props will be passed down to `label` element (eg. name)**
 
 ```reactjs
 <RSFormLabel id={this.props.id}>
@@ -294,7 +298,7 @@ You can pass all supported `<label />` `props` as well as `props` listed below:
 <br>
 <br>
 
-## Icon
+## RSIcon
 
 You are able to use all supported icons from popular icon packs like **Font Awesome** and ** Material Design**.
 
@@ -329,9 +333,7 @@ Use their original name to get the icon you want. **For example: `FaTrash` or `M
 <br>
 <br>
 
-## Input
-
-You can pass all supported `<input />` `props` as well as `props` listed below:
+## RSInput
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -347,7 +349,7 @@ You can pass all supported `<input />` `props` as well as `props` listed below:
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 **onChange** | function | null | Called on its value update, the value passed as an argument
-| | | | **Any other additional props will be passed down to `input` element**
+| | | **Any other additional props will be passed down to `input` element**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/input.png" style="margin:auto;width: 520px;"/></div>
 
@@ -379,7 +381,7 @@ You can pass all supported `<input />` `props` as well as `props` listed below:
 
 ---
 
-## Label
+## RSLabel
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -419,7 +421,7 @@ You can pass all supported `<input />` `props` as well as `props` listed below:
 
 ---
 
-## Notification
+## RSNotification
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -467,7 +469,7 @@ You can pass all supported `<input />` `props` as well as `props` listed below:
 
 ---
 
-## Progress Bar
+## RSProgressBar
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -497,11 +499,9 @@ You can pass all supported `<input />` `props` as well as `props` listed below:
 <br>
 <br>
 
-## Radio
+## RSRadio
 
-**For group of `Radio` component use `RadioGroup` - [check it](?id=radio-group)**
-
-You can pass all supported `<input type='radio' />` `props` as well as `props` listed below:
+**For group of `RSRadio` component use `RSRadioGroup` - [check it](?id=rsradiogroup)**
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -511,7 +511,7 @@ You can pass all supported `<input type='radio' />` `props` as well as `props` l
 **color** | string | null | Specifies an color of bullet when `checked`
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
-| | | | **Any other props will be passed down to `radio input` element (eg. onChange)**
+| | | **Any other props will be passed down to `radio input` element (eg. onChange)**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/radio.png" style="margin:auto;width: 97px;"/></div>
 
@@ -547,9 +547,9 @@ You can pass all supported `<input type='radio' />` `props` as well as `props` l
 
 ---
 
-## Radio Group
+## RSRadioGroup
 
-**Documentation for `Radio` component you can [find here](?id=radio)**
+**Documentation for `RSRadio` component you can [find here](?id=rsradio)**
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -592,17 +592,15 @@ You can pass all supported `<input type='radio' />` `props` as well as `props` l
 
 ---
 
-## Select
+## RSSelect
 
-*You need to have installed `react-select` in your project to be able to use our `RSSelect` component. Check [install guide]() and install all required packages if you missed something at the beginning.*
+Our component is working with `react-select` ([documentation](http://jedwatson.github.io/react-select/)) which means that you can use all available functionality of `react-select`.
+Our component `RSSelect` is currently made for standard use cases of `<Select>`. You can also pass image values into your `RSSelect` or change rounding of the image.
 
-You are still able to use all benefits of `react-select` (check documentation) but our component UI is currently made for standard use cases of `<Select>`. You can also pass image values into your `RSSelect` or change rounding of the image.
+> **`<RSSelect />` will pass down all `react-select` props** - for more info check [RSSelectOption](?id=rsselectoption).
 
-> **`<RSSelect />` will pass all `react-select` props** and for more info check [Select Option](?id=select-option).
 
-<br>
-
-## Select Option
+## RSSelectOption
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -643,10 +641,7 @@ imageOption (option) {
 
 ---
 
-<br>
-<br>
-
-## Social Button
+## RSSocialButton
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -660,7 +655,7 @@ imageOption (option) {
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
-| | | | **Any other props will be passed down to `a` element**
+| | | **Any other props will be passed down to `a` element**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/social-button.png" style="margin:auto;width: 141px;"/></div>
 
@@ -690,7 +685,7 @@ imageOption (option) {
 
 ---
 
-## Switch
+## RSSwitch
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -703,7 +698,7 @@ imageOption (option) {
 **disabled** | bool | `false` | Determines whether the component should be disabled
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
-**onChange** | function | null | Called on switch state change, **label** and **boolean state** passed as function args
+**onChange** | func | null | Called on switch state change, **label** and **boolean state** passed as function args
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/switch.png" style="margin:auto;width: 344px;"/></div>
 
@@ -740,9 +735,7 @@ imageOption (option) {
 
 ---
 
-## Textarea
-
-You can pass all supported `<textarea />` `props` as well as `props` listed below:
+## RSTextarea
 
 <span class="tab-title">PROP</span> | <span class="tab-title">TYPE</span> | <span class="tab-title">DEFAULT</span> | <span class="tab-title">DESCRIPTION</span>
 :--- | :--- | :--- | :---
@@ -755,7 +748,7 @@ You can pass all supported `<textarea />` `props` as well as `props` listed belo
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 **onChange** | function | null | Called on its value update, the value passed as an argument
-| | | | **Any other additional props will be passed down to `textarea` element**
+| | | **Any other additional props will be passed down to `textarea` element**
 
 <div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/textarea.png" style="margin:auto;width: 521px;"/></div>
 
