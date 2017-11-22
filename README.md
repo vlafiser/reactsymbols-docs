@@ -4,7 +4,7 @@ Welcome on offical documentation of `ReactSymbols React UI Kit` which is made fo
 
 <br>
 
-**GENERAL INFORMATION:**
+**URLs:**
 
 - [Website of React UI Kit](http://www.reactsymbols.com)
 - [Free Sketch resources](http://symbols.janlosert.com)
@@ -36,6 +36,10 @@ Welcome on offical documentation of `ReactSymbols React UI Kit` which is made fo
 
 ## Run our Demo app
 
+[VIDEO: Demo app preview](https://youtu.be/4li6B3tdh1E)
+
+<br>
+
 **1)** In Terminal go to the folder where our `ReactSymbolsDemoApp` is placed
 ```
 cd ./path/ReactSymbolsKit/ReactSymbolsDemoApp
@@ -52,11 +56,13 @@ npm start
 ```
 
 **4)**
-Enjoy our beautiful demo app and play around with it! :)
+You can see your first ReactSymbol component!
 
 ----
 
 ## Use in your project
+
+[VIDEO TUTORIAL](https://youtu.be/Hv6UgTvFHak)
 
 Be sure that **you have installed all required NPM packages** you need for smooth setup of ReactSymbols UI Kit. Install all of them by one simple line:
 ```
