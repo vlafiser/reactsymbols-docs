@@ -1,5 +1,39 @@
 # About ReactSymbols
 
+## Setup
+
+
+
+
+### Demo app
+
+### Use in your project
+
+Be sure that **you have installed all required NPM packages** you need for smooth setup of ReactSymbols UI Kit. Install all of them by one simple line:
+```
+npm install prop-types react-icons classnames react-select --save
+```
+
+1) Move `ReactSymbolsKit.js` and `ReactSymbolsKit.css` into your `src` folder
+2) Link Component you want to use and files you moved into the project before:
+```javascript
+import './ReactSymbolsKit.css'
+import { RSInput, RSButton } from './ReactSymbolsKit.js'
+```
+2) Link Component you want to use and files you moved into the project before:
+```javascript
+import './ReactSymbolsKit.css'
+import { RSInput, RSButton } from './ReactSymbolsKit.js'
+```
+3) Define component you want to use. For example:
+```javascript
+<RSButton
+	value='Your first RSButton'
+	onClick={this.onClick.bind(this)}
+/>
+```
+
+
 #### Files naming
 Naming of all Components and their SASS files starts with `RS` for example `RSButton.js` or `RSButton.scss`. We don't want to create mess into your app or fight names of your existing files. It's also good for identification of code from ReactSymbols UI Kit.
 
