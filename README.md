@@ -6,7 +6,8 @@ Welcome on offical documentation of `ReactSymbols React UI Kit` which is made fo
 
 **GENERAL INFORMATION:**
 
-SOON
+- [Website of React UI Kit](http://www.reactsymbols.com)
+- [Free Sketch resources](http://symbols.janlosert.com)
 
 <br>
 
