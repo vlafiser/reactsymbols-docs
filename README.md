@@ -24,7 +24,7 @@ Welcome on offical documentation of `ReactSymbols React UI Kit` which is made fo
 <br>
 
 **STRUCTURE OF FOLDER:**
-<img src="http://localhost:3000/images/folder-structure.png" style="display:block;width: 186px;margin-top:20px;"/>
+<img src="http://docs.reactsymbols.com/images/folder-structure.png" style="display:block;width: 186px;margin-top:20px;"/>
 
 <br>
 
@@ -65,7 +65,7 @@ npm install prop-types react-icons classnames react-select --save
 <br>
 
 **1)** Move `ReactSymbolsKit.js` and `ReactSymbolsKit.css` from folder you downloaded into your `src` folder in your project.
-<img src="http://localhost:3000/images/move-to-folder.png" style="display:block;width: 197px;margin-top:20px;"/>
+<img src="http://docs.reactsymbols.com/images/move-to-folder.png" style="display:block;width: 197px;margin-top:20px;"/>
 
 **2)** Link the files you moved in during prevous step and define which components you like to import:
 ```javascript
