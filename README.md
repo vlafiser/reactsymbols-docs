@@ -5,6 +5,8 @@ Welcome in offical documentation of `ReactSymbols React UI Kit` which is made fo
 - [Website](http://www.reactsymbols.com)
 - [Sketch resources](http://symbols.janlosert.com)
 
+Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
+
 <br>
 
 **PLANNED UPDATES:**
