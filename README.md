@@ -1,17 +1,14 @@
 # Documentation
 
-Welcome on offical documentation of `ReactSymbols React UI Kit` which is made for `ReactJS` applications and you can easily use each and all of the component in your project. We are pushing it with lot of predefined colors so it's perfectly fit for *prototyping* of your IU for your new feature of page.
+Welcome in offical documentation of `ReactSymbols React UI Kit` which is made for `ReactJS` applications and you can easily use each and all of the component in your project. We are pushing it with lot of predefined colors so it's perfectly fit for *prototyping* of your IU for your new feature of page.
 
-<br>
-
-**URLs:**
-
-- [Website of React UI Kit](http://www.reactsymbols.com)
-- [Free Sketch resources](http://symbols.janlosert.com)
+- [Website](http://www.reactsymbols.com)
+- [Sketch resources](http://symbols.janlosert.com)
 
 <br>
 
 **PLANNED UPDATES:**
+- **Typescript support** `NEW`
 - Adding support of SASS files and be able to change color variables to make it fit with your brand by one line code of CSS color.
 - Adding more components (different types of buttons, dropdown,...)
 
@@ -36,7 +33,7 @@ Welcome on offical documentation of `ReactSymbols React UI Kit` which is made fo
 
 ## Run our Demo app
 
-[VIDEO: Demo app preview](https://youtu.be/4li6B3tdh1E)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4li6B3tdh1E" frameborder="0" allowfullscreen></iframe>
 
 <br>
 
@@ -55,14 +52,13 @@ npm install
 npm start
 ```
 
-**4)**
-You can see your first ReactSymbol component!
+**4)** 🎉 You can see all the ReactSymbols elements together in real app
 
 ----
 
 ## Use in your project
 
-[VIDEO TUTORIAL](https://youtu.be/Hv6UgTvFHak)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hv6UgTvFHak" frameborder="0" allowfullscreen></iframe>
 
 Be sure that **you have installed all required NPM packages** you need for smooth setup of ReactSymbols UI Kit. Install all of them by one simple line:
 ```
@@ -84,8 +80,7 @@ import { RSButton } from './ReactSymbolsKit.js'
 <RSButton value='Your first RSButton' />
 ```
 
-**4)** You made first ReactSymbols component!
-<img src="http://docs.reactsymbols.com/images/first-component.png" style="display:block;width: 558px;"/>
+**4)** 🎉 You made first ReactSymbols component!
 
 <br>
 
