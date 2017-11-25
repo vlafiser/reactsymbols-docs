@@ -62,27 +62,27 @@ npm start
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hv6UgTvFHak" frameborder="0" allowfullscreen></iframe>
 
-Be sure that **you have installed all required NPM packages** you need for smooth setup of ReactSymbols UI Kit. Install all of them by one simple line:
-```
-npm install prop-types react-icons classnames react-select --save
-```
-<br>
+**1)** Move `react-symbols-kit` folder you downloaded into your your project folder.
 
-**1)** Move `ReactSymbolsKit.js` and `ReactSymbolsKit.css` from folder you downloaded into your `src` folder in your project.
-<img src="http://docs.reactsymbols.com/images/move-to-folder.png" style="display:block;width: 197px;margin-top:20px;"/>
+**2)** Install local module with react-symbols-kit (It will also download all required dependencies)
+```bash
+	npm install <your-path>/react-symbols-kit
+```
 
-**2)** Link the files you moved in during prevous step and define which components you like to import:
+**3)** Link the stylesheet files and define which components you like to import:
 ```javascript
-import './ReactSymbolsKit.css'
-import { RSButton } from './ReactSymbolsKit.js'
+import 'react-symbols-kit/ReactSymbolsKit.css'
+import { RSButton } from 'react-symbols-kit'
 ```
 
-**3)** Let's call the component you want to use! All available props are available separately for each component below in this documentation. For example:
+**4)** Let's call the component you want to use! All available props are available separately for each component below in this documentation. For example:
 ```javascript
 <RSButton value='Your first RSButton' />
 ```
 
 **4)** 🎉 You made first ReactSymbols component!
+
+**If you love TypeScript, you will love ReactSymbolsKit as well ❤️. We do have declared TypeScript bindings for super easy autocomplete in your IDE.** 😍
 
 <br>
 
