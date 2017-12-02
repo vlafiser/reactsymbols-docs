@@ -82,7 +82,7 @@ import { RSButton } from 'react-symbols-kit'
 
 **4)** 🎉 You made first ReactSymbols component!
 
-**If you love TypeScript, you will love ReactSymbolsKit as well ❤️. We do have declared TypeScript bindings for super easy autocomplete in your IDE.** 😍
+**If you love TypeScript, you will love ReactSymbolsKit as well ❤️. We do have declared TypeScript bindings for super easy autocompletion feature in your IDE.** 😍
 
 <br>
 
