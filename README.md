@@ -10,7 +10,6 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 <br>
 
 **PLANNED UPDATES:**
-- **Typescript support** `NEW`
 - Adding support of SASS files and be able to change color variables to make it fit with your brand by one line code of CSS color.
 - Adding more components (different types of buttons, dropdown,...)
 
@@ -19,6 +18,8 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 **CHANGELOG:**
 
 `1.0.0` [22.11.2017] - Initial release version
+
+`1.1.0` [04.12.2017] - [Support of TypeScript](https://medium.com/reactsymbols/reactsymbols-ui-kit-1-1-has-got-better-typescript-and-local-npm-module-added-264c1bc3fe47), npm local module available
 
 <br>
 
