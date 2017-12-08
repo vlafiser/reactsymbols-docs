@@ -10,7 +10,6 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 <br>
 
 **PLANNED UPDATES:**
-- Adding support of SASS files and be able to change color variables to make it fit with your brand by one line code of CSS color.
 - Adding more components (different types of buttons, dropdown,...)
 
 <br>
@@ -20,6 +19,8 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 `1.0.0` [22.11.2017] - Initial release version
 
 `1.1.0` [04.12.2017] - [Support of TypeScript](https://medium.com/reactsymbols/reactsymbols-ui-kit-1-1-has-got-better-typescript-and-local-npm-module-added-264c1bc3fe47), npm local module available
+
+`1.2.0` [XX.12.2017] - Support of SASS files and be able to change color variables to make it fit with your brand by one line code of CSS color
 
 <br>
 
@@ -86,6 +87,36 @@ import { RSButton } from 'react-symbols-kit'
 **If you love TypeScript, you will love ReactSymbolsKit as well ❤️. We do have declared TypeScript bindings for super easy autocomplete feature in your IDE.** 😍
 
 <br>
+
+## Customize styles (aka how to build your SASS files)
+If you want to change colors to match your brand requirements, or simply you want to customize styles, please you can follow this steps.
+1. Make sure npm module **node-sass-chokidar** is availabe in your project. If not so, please run: **npm install node-sass-chokidar@0.0.3**
+2. Locate folder called **sass** in react-symbols-kit and make your adjusments. For changing colors, you can simply update variables in **RSDefaults.scss** file.
+3. Run following command to build sass files into css.
+```bash
+node_modules/.bin/node-sass-chokidar <your-path>/react-symbols-kit/sass/ReactSymbolsKit.scss -o <your-path>/react-symbols-kit --output-style=compressed
+```
+*--output-style parameter is optional if you don't want to minify your css styles*
+
+***\<your-path\>** replace this with your path where  react-symbols-kit is placed*
+
+4. That's it! 🎉
+
+**Common issues with building the sass files**
+1. *ReactSymbolsKit.css has not been created* - place make sure \<your-path\> is correct
+2. *No change has been projected even if css file was created* - stop and run your react dev server again (npm run start) or try to clear cache in your browser.
+
+**Advanced Sass building**
+If you need to build sass files reagularly, you can place your command into package.json, and create shortcut for it.
+eg.
+```json
+	{
+		"scripts": {
+			"build-css": "node-sass-chokidar src/react-symbols-kit/sass/ReactSymbolsKit.scss -o src/react-symbols-kit --output-style=compressed",
+		}
+	}
+```
+After that, you can just use this shortcut: **npm run build-css**
 
 -----
 
