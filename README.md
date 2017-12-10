@@ -18,7 +18,7 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 		<li>Added support for **TypeScript**</li>
 		<li>Added support for **SASS files and build - match all components with color of your brand**</li>
 		<li>Completely rewritten **RSSwitch** component</li>
-		<li>Fixed UI issues for **RSCheckbox** &amp; **RSRadio**</li>
+		<li>Fixed UI issues for **RSCheckbox**, **RSRadio** and **RSButton**</li>
 	</ul>
 </div>
 
