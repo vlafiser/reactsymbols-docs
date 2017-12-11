@@ -50,7 +50,7 @@ Library used to be distributed as two files. Now it comes with folder (`react-sy
 
 **2)** Define local npm module with command
 ```cmd
-npm install <your-path>/react-symbols-kit
+npm install <your-path>/react-symbols-kit --save
 ```
 
 **3)** Replace relative paths in your project with your module
@@ -105,7 +105,7 @@ npm start
 
 **2)** Install local module with react-symbols-kit (It will also download all required dependencies)
 ```bash
-npm install <your-path>/react-symbols-kit
+npm install <your-path>/react-symbols-kit --save
 ```
 
 **3)** Link the stylesheet files and define which components you like to import:
@@ -144,7 +144,7 @@ npm install node-sass-chokidar@0.0.3 --save
 
 **2)** Locate folder called `/sass` in `react-symbols-kit` folder and make your adjusments. For changing colors, you can simply update variables in **RSDefaults.scss** file.
 
-**3)** Run following command to build sass files into css:
+**3)** Run following command from your project root to build sass files into css:
 
 **`\<your-path>` replace this with your path where your `react-symbols-kit` folder is placed**
 
@@ -158,7 +158,7 @@ node_modules/.bin/node-sass-chokidar <your-path>/react-symbols-kit/sass/ReactSym
 ----
 
 **Common issues with building the sass files**
-1. **`ReactSymbolsKit.css` has not been created** - make sure that place `\<your-path>` is correct
+1. **`ReactSymbolsKit.css` has not been created** - make sure that place `<your-path>` is correct
 2. **No change has been projected even if css file was created** - stop and run your react dev server again (`npm run start`) or try to clear cache in your browser.
 
 **Advanced SASS building**
