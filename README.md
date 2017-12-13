@@ -113,7 +113,7 @@ npm start
 <div style="margin-top: 30px;"></div>
 <div class="number">4</div>
 
-You can see all the ReactSymbols elements together in real app 🎉 🎉 🎉
+You can see all the ReactSymbols elements together in real app 🎉🎉🎉
 
 <br>
 
@@ -165,7 +165,7 @@ Let's call the component you want to use! All available props are available sepa
 <div style="margin-top: 30px;"></div>
 <div class="number">5</div>
 
-You made first ReactSymbols component! 🎉 🎉 🎉
+You made first ReactSymbols component! 🎉🎉🎉
 
 <br>
 
@@ -214,7 +214,7 @@ node_modules/.bin/node-sass-chokidar <your-path>/reactsymbols-kit/sass/ReactSymb
 <div style="margin-top: 30px;"></div>
 <div class="number">4</div>
 
-That's it! 🎉🎉 🎉
+That's it! 🎉🎉🎉
 
 ----
 
