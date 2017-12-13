@@ -38,7 +38,7 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 ## Folder structure
 
 Since `version 1.1` is structure of this kit/lib has changed - please check [how to migrate ReactSymbols to version 1.1](?id=migration-to-version-11)
-<img src="http://docs.reactsymbols.com/images/folder-structure.png" style="display:block;width: 186px;margin-top:20px;"/>
+<img src="http://docs.reactsymbols.com/images/folder-structure-new.png" style="display:block;width: 396px;margin-top:20px;"/>
 
 <br>
 
