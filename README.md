@@ -3,29 +3,78 @@
 Welcome in offical documentation of `ReactSymbols React UI Kit` which is made for `ReactJS` applications and you can easily use each and all of the component in your project. We are pushing it with lot of predefined colors so it's perfectly fit for *prototyping* of your IU for your new feature of page.
 
 - [Website](http://www.reactsymbols.com)
-- [Sketch resources](http://symbols.janlosert.com)
+- [License](http://www.reactsymbols.com/license)
 
 Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 
 <br>
 
-**PLANNED UPDATES:**
-- **Typescript support** `NEW`
-- Adding support of SASS files and be able to change color variables to make it fit with your brand by one line code of CSS color.
-- Adding more components (different types of buttons, dropdown,...)
+## Changelog
+
+**`CURRENT: version 1.1`** (Released 13.12.2017)
+<div style="margin-top: -16px; margin-bottom: 4px;">
+	<ul style="padding-left: 40px;">
+		<li>Added support of **local npm package**</li>
+		<li>Added support for **TypeScript**</li>
+		<li>Added support for **SASS files and build - match all components with color of your brand**</li>
+		<li>Completely rewritten **RSSwitch** component</li>
+		<li>Fixed UI issues for **RSCheckbox**, **RSRadio** and **RSButton**</li>
+	</ul>
+</div>
+
+`version 1.0` (Released 22.11.2017)
+<div style="margin-top: -16px; margin-bottom: 4px;">
+	<ul style="padding-left: 40px;">
+		<li>Initial release of ReactSymbols</li>
+	</ul>
+</div>
+
+<!-- `1.1.0` [04.12.2017] - [Support of TypeScript](https://medium.com/reactsymbols/reactsymbols-ui-kit-1-1-has-got-better-typescript-and-local-npm-module-added-264c1bc3fe47), npm local module available
+
+`1.2.0` [XX.12.2017] - Support of SASS files and be able to change color variables to make it fit with your brand by one line code of CSS color -->
 
 <br>
 
-**CHANGELOG:**
+## Folder structure
 
-`1.0.0` [22.11.2017] - Initial release version
-
-<br>
-
-**STRUCTURE OF FOLDER:**
+Since `version 1.1` is structure of this kit/lib has changed - please check [how to migrate ReactSymbols to version 1.1](?id=migration-to-version-11)
 <img src="http://docs.reactsymbols.com/images/folder-structure.png" style="display:block;width: 186px;margin-top:20px;"/>
 
 <br>
+
+## Migration to version 1.1
+
+Library used to be distributed as two files. Now it comes with folder (`reactsymbols-kit`) where all its need are placed. Please go through following steps if you want to migrate from version 1.0.
+
+<div style="margin-top: 30px;"></div>
+<div class="number">1</div>
+
+Copy `reactsymbols-kit` folder you have downloaded into your project.
+
+<div style="margin-top: 30px;"></div>
+<div class="number">2</div>
+
+Define local npm module with following command:
+```cmd
+npm install <your-path>/reactsymbols-kit --save
+```
+
+<div style="margin-top: 30px;"></div>
+<div class="number">3</div>
+
+Replace relative paths in your project with your module
+```javascript
+// instead eg.
+import "../your/folder/ReactSymbolsKit.css"
+
+// use:
+import "reactsymbols-kit/ReactSymbolsKit.css"
+```
+
+<div style="margin-top: 30px;"></div>
+<div class="number">4</div>
+
+You successfully upgraded to version 1.1 of ReactSymbols 🎉🎉🎉
 
 ---
 
@@ -37,56 +86,192 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4li6B3tdh1E" frameborder="0" allowfullscreen></iframe>
 
-<br>
+<div style="margin-top: 30px;"></div>
+<div class="number">1</div>
 
-**1)** In Terminal go to the folder where our `ReactSymbolsDemoApp` is placed
-```
-cd ./path/ReactSymbolsKit/ReactSymbolsDemoApp
+In Terminal go to the folder where our `demo` is placed
+```cmd
+cd <your-path>/ReactSymbols-1.1/demo
 ```
 
-**2)** Install dependencies via NPM
-```
+<div style="margin-top: 30px;"></div>
+<div class="number">2</div>
+
+Install dependencies via NPM
+```cmd
 npm install
 ```
 
-**3)** Then start your localhost and build our demo app easily by
-```
+<div style="margin-top: 30px;"></div>
+<div class="number">3</div>
+
+Then start your localhost and build our demo app easily by
+```cmd
 npm start
 ```
 
-**4)** 🎉 You can see all the ReactSymbols elements together in real app
+<div style="margin-top: 30px;"></div>
+<div class="number">4</div>
+
+You can see all the ReactSymbols elements together in real app 🎉🎉🎉
+
+<br>
+
+#### Demo app SASS build
+Let's try to build SASS files in our demo app before you will try it into your project.
+
+Locate folder called `/sass` in `demo/src/reactsymbols-kit` folder and make your adjusments. Change `primaryColor` or any other variable in `RSDefaults.scss` file and run `npm run build-css`. Then you need to start your localhost again `npm start` and you will see it live.
 
 ----
 
-## Use in your project
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Hv6UgTvFHak" frameborder="0" allowfullscreen></iframe>
-
-Be sure that **you have installed all required NPM packages** you need for smooth setup of ReactSymbols UI Kit. Install all of them by one simple line:
-```
-npm install prop-types react-icons classnames react-select --save
-```
 <br>
 
-**1)** Move `ReactSymbolsKit.js` and `ReactSymbolsKit.css` from folder you downloaded into your `src` folder in your project.
-<img src="http://docs.reactsymbols.com/images/move-to-folder.png" style="display:block;width: 197px;margin-top:20px;"/>
+## Use in your project
 
-**2)** Link the files you moved in during prevous step and define which components you like to import:
-```javascript
-import './ReactSymbolsKit.css'
-import { RSButton } from './ReactSymbolsKit.js'
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BEnKI6Z9_ZU" frameborder="0" allowfullscreen></iframe>
+
+<div style="margin-top: 30px;"></div>
+<div class="number">1</div>
+
+Move `reactsymbols-kit` folder you downloaded into your your project folder.
+
+<div style="margin-top: 30px;"></div>
+<div class="number">2</div>
+
+Install local module with react-symbols-kit (It will also download all required dependencies)
+```bash
+npm install <your-path>/reactsymbols-kit --save
 ```
 
-**3)** Let's call the component you want to use! All available props are available separately for each component below in this documentation. For example:
+<!-- npm install <your-path>/react-symbols-kit --save -->
+
+<div style="margin-top: 30px;"></div>
+<div class="number">3</div>
+
+Link the stylesheet files and define which components you like to import:
+```javascript
+import 'reactsymbols-kit/ReactSymbolsKit.css'
+import { RSButton } from 'reactsymbols-kit'
+```
+
+<div style="margin-top: 30px;"></div>
+<div class="number">4</div>
+
+Let's call the component you want to use! All available props are available separately for each component below in this documentation. For example:
 ```javascript
 <RSButton value='Your first RSButton' />
 ```
 
-**4)** 🎉 You made first ReactSymbols component!
+<div style="margin-top: 30px;"></div>
+<div class="number">5</div>
+
+You made first ReactSymbols component! 🎉🎉🎉
+
+<br>
+
+If you love TypeScript, you will love ReactSymbolsKit as well ❤️.<br>
+[We do have declared](?id=typescript-support) TypeScript bindings for super easy autocomplete feature in your IDE. 😍
 
 <br>
 
 -----
+
+<br>
+
+# **Features**
+
+## Sass support - brand it all by one line
+
+<img src="http://docs.reactsymbols.com/images/sass-demo.gif" style="display:block;width: 620px;margin-top:20px;"/>
+
+If you want to change colors to match your brand requirements, or simply you want to customize styles, you can follow this steps.
+
+<div style="margin-top: 30px;"></div>
+<div class="number">1</div>
+
+Make sure npm module `node-sass-chokidar` is availabe in your project. If not so, please run:
+```cmd
+npm install node-sass-chokidar@0.0.3 --save
+```
+
+<div style="margin-top: 30px;"></div>
+<div class="number">2</div>
+
+Locate folder called `/sass` in `reactsymbols-kit` folder and make your adjusments. For changing colors, you can simply update variables in **RSDefaults.scss** file.
+
+<div style="margin-top: 30px;"></div>
+<div class="number">3</div>
+
+Run following command from your project root to build sass files into css:
+
+**`\<your-path>` replace this with your path where your `reactsymbols-kit` folder is placed**
+
+```cmd
+node_modules/.bin/node-sass-chokidar <your-path>/reactsymbols-kit/sass/ReactSymbolsKit.scss -o <your-path>/reactsymbols-kit --output-style=compressed
+```
+*--output-style parameter is optional if you don't want to minify your css styles*
+
+<div style="margin-top: 30px;"></div>
+<div class="number">4</div>
+
+That's it! 🎉🎉🎉
+
+----
+
+**Common issues with building the sass files**
+1. **`ReactSymbolsKit.css` has not been created** - make sure that place `<your-path>` is correct
+2. **No change has been projected even if css file was created** - stop and run your react dev server again (`npm run start`) or try to clear cache in your browser.
+
+**Advanced SASS building**
+If you need to build sass files reagularly, you can place your command into `package.json`, and create shortcut for it.
+eg.
+```json
+	{
+		"scripts": {
+			"build-css": "node-sass-chokidar src/reactsymbols-kit/sass/ReactSymbolsKit.scss -o src/reactsymbols-kit --output-style=compressed",
+		}
+	}
+```
+
+After that, you can just use this shortcut: `npm run build-css`
+
+----
+
+<br>
+
+## Local npm support
+
+Before (version 1.0), ReactSymbols UI Kit has been distributed as 2 files which you would just include in your project and it was ready to use. Since `version 1.1` ReactSymbols UI Kit comes with `package.json`, now you can use this kit as local npm module!
+
+```cmd
+npm install <your-path>/reactsymbols-kit
+```
+
+Variable <your-path> defines where your folder with ReactSymbols UI Kit placed. NPM module does have a lot of other nice features like easier paths for including, instead:
+
+```javascript
+import { RSButton } from "../your/long/path/ReactSymbolsKit.js"
+```
+
+now you can use following line anywhere in your project:
+
+```javascript
+import { RSButton } from "reactsymbols-kit"
+```
+
+How simple and powerful 🎉🎉🎉
+
+-----
+
+<br>
+
+## Typescript support
+
+<img src="http://docs.reactsymbols.com/images/typescript-demo.gif" style="display:block;width: 600px;margin-top:20px;"/>
+
+Many customers requested this powerfull feature so we decided to add it into ReactSymbols UI Kit! More about **Typescript** you can find in our Medium article [here]().
+
+----
 
 <br>
 
@@ -129,7 +314,7 @@ List of available components:
 **style** | object, array | null | Add `style` properties for better customization
 **requestClose** | func | null | Function which will be called on cross button click to close the alert
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/alert.png" style="margin:auto;width: 558px;"/></div>
+<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/alert.png" style="margin:auto;width: 557px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleAlert.js */
