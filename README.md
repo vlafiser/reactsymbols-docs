@@ -265,7 +265,7 @@ How simple and powerful 🎉🎉🎉
 
 <img src="http://docs.reactsymbols.com/images/typescript-demo.gif" style="display:block;width: 600px;margin-top:20px;"/>
 
-Many customers requested this powerfull feature so we decided to add it into ReactSymbols UI Kit! More about **Typescript** you can find in our Medium article [here]().
+Many customers requested this powerfull feature so we decided to add it into ReactSymbols UI Kit!
 
 ----
 
