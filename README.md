@@ -29,10 +29,6 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 	</ul>
 </div>
 
-<!-- `1.1.0` [04.12.2017] - [Support of TypeScript](https://medium.com/reactsymbols/reactsymbols-ui-kit-1-1-has-got-better-typescript-and-local-npm-module-added-264c1bc3fe47), npm local module available
-
-`1.2.0` [XX.12.2017] - Support of SASS files and be able to change color variables to make it fit with your brand by one line code of CSS color -->
-
 <br>
 
 ## Folder structure
