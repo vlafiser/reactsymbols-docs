@@ -11,7 +11,7 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 
 ## Changelog
 
-**`CURRENT: version 1.1`** (Released 11.12.2017)
+**`CURRENT: version 1.1`** (Released 13.12.2017)
 <div style="margin-top: -16px; margin-bottom: 4px;">
 	<ul style="padding-left: 40px;">
 		<li>Added support of **local npm package**</li>
