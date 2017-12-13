@@ -182,7 +182,7 @@ If you love TypeScript, you will love ReactSymbolsKit as well ❤️.<br>
 
 ## Sass support - brand it all by one line
 
-<img src="http://localhost:3000/images/sass-demo.gif" style="display:block;width: 620px;margin-top:20px;"/>
+<img src="http://docs.reactsymbols.com/images/sass-demo.gif" style="display:block;width: 620px;margin-top:20px;"/>
 
 If you want to change colors to match your brand requirements, or simply you want to customize styles, please you can follow this steps.
 
@@ -267,7 +267,7 @@ How simple and powerful 🎉🎉🎉
 
 ## Typescript support
 
-<img src="http://localhost:3000/images/typescript-demo.gif" style="display:block;width: 600px;margin-top:20px;"/>
+<img src="http://docs.reactsymbols.com/images/typescript-demo.gif" style="display:block;width: 600px;margin-top:20px;"/>
 
 Many customers requested this powerfull feature so we decided to add it into ReactSymbols UI Kit! More about **Typescript** you can find in our Medium article [here]().
 
@@ -314,7 +314,7 @@ List of available components:
 **style** | object, array | null | Add `style` properties for better customization
 **requestClose** | func | null | Function which will be called on cross button click to close the alert
 
-<div style="display: block; text-align: center;"><img src="http://localhost:3000/images/alert.png" style="margin:auto;width: 557px;"/></div>
+<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/alert.png" style="margin:auto;width: 557px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleAlert.js */
