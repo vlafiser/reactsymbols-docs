@@ -37,14 +37,14 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 
 ## Folder structure
 
-Since `version 1.1` is structure of folder changed - please check [how to migrate ReactSymbols to version 1.1](?id=migration-to-version-11)
+Since `version 1.1` is structure of this kit/lib has changed - please check [how to migrate ReactSymbols to version 1.1](?id=migration-to-version-11)
 <img src="http://docs.reactsymbols.com/images/folder-structure.png" style="display:block;width: 186px;margin-top:20px;"/>
 
 <br>
 
 ## Migration to version 1.1
 
-Library used to be distributed as two files. Now it comes with folder (`reactsymbols-kit`) where all its need are placed. If you want to migrate from version 1.0 you have basically two options.
+Library used to be distributed as two files. Now it comes with folder (`reactsymbols-kit`) where all its need are placed. Please go through following steps if you want to migrate from version 1.0.
 
 <div style="margin-top: 30px;"></div>
 <div class="number">1</div>
@@ -54,7 +54,7 @@ Copy `reactsymbols-kit` folder you have downloaded into your project.
 <div style="margin-top: 30px;"></div>
 <div class="number">2</div>
 
-Define local npm module with command
+Define local npm module with following command:
 ```cmd
 npm install <your-path>/reactsymbols-kit --save
 ```
@@ -113,7 +113,7 @@ npm start
 <div style="margin-top: 30px;"></div>
 <div class="number">4</div>
 
-You can see all the ReactSymbols elements together in real app 🎉 🎉 🎉 
+You can see all the ReactSymbols elements together in real app 🎉 🎉 🎉
 
 <br>
 
@@ -165,7 +165,7 @@ Let's call the component you want to use! All available props are available sepa
 <div style="margin-top: 30px;"></div>
 <div class="number">5</div>
 
-You made first ReactSymbols component! 🎉 🎉 🎉 
+You made first ReactSymbols component! 🎉 🎉 🎉
 
 <br>
 
@@ -184,7 +184,7 @@ If you love TypeScript, you will love ReactSymbolsKit as well ❤️.<br>
 
 <img src="http://docs.reactsymbols.com/images/sass-demo.gif" style="display:block;width: 620px;margin-top:20px;"/>
 
-If you want to change colors to match your brand requirements, or simply you want to customize styles, please you can follow this steps.
+If you want to change colors to match your brand requirements, or simply you want to customize styles, you can follow this steps.
 
 <div style="margin-top: 30px;"></div>
 <div class="number">1</div>
@@ -214,7 +214,7 @@ node_modules/.bin/node-sass-chokidar <your-path>/reactsymbols-kit/sass/ReactSymb
 <div style="margin-top: 30px;"></div>
 <div class="number">4</div>
 
-That's it! 🎉🎉 🎉 
+That's it! 🎉🎉 🎉
 
 ----
 
