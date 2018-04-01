@@ -2,8 +2,8 @@
 
 Welcome in offical documentation of `ReactSymbols React UI Kit` which is made for `ReactJS` applications and you can easily use each and all of the component in your project. We are pushing it with lot of predefined colors so it's perfectly fit for *prototyping* of your IU for your new feature of page.
 
-- [Website](http://www.reactsymbols.com)
-- [License](http://www.reactsymbols.com/license)
+- [Website](https://www.reactsymbols.com)
+- [License](https://www.reactsymbols.com/license)
 
 Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 
@@ -34,7 +34,7 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 ## Folder structure
 
 Since `version 1.1` is structure of this kit/lib has changed - please check [how to migrate ReactSymbols to version 1.1](?id=migration-to-version-11)
-<img src="http://docs.reactsymbols.com/images/folder-structure-new.png" style="display:block;width: 396px;margin-top:20px;"/>
+<img src="https://docs.reactsymbols.com/images/folder-structure-new.png" style="display:block;width: 396px;margin-top:20px;"/>
 
 <br>
 
@@ -178,7 +178,7 @@ If you love TypeScript, you will love ReactSymbolsKit as well ❤️.<br>
 
 ## Sass support - brand it all by one line
 
-<img src="http://docs.reactsymbols.com/images/sass-demo.gif" style="display:block;width: 620px;margin-top:20px;"/>
+<img src="https://docs.reactsymbols.com/images/sass-demo.gif" style="display:block;width: 620px;margin-top:20px;"/>
 
 If you want to change colors to match your brand requirements, or simply you want to customize styles, you can follow this steps.
 
@@ -263,7 +263,7 @@ How simple and powerful 🎉🎉🎉
 
 ## Typescript support
 
-<img src="http://docs.reactsymbols.com/images/typescript-demo.gif" style="display:block;width: 600px;margin-top:20px;"/>
+<img src="https://docs.reactsymbols.com/images/typescript-demo.gif" style="display:block;width: 600px;margin-top:20px;"/>
 
 Many customers requested this powerfull feature so we decided to add it into ReactSymbols UI Kit!
 
@@ -310,7 +310,7 @@ List of available components:
 **style** | object, array | null | Add `style` properties for better customization
 **requestClose** | func | null | Function which will be called on cross button click to close the alert
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/alert.png" style="margin:auto;width: 557px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/alert.png" style="margin:auto;width: 557px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleAlert.js */
@@ -349,7 +349,7 @@ List of available components:
 **valueStyle** | object, array | null | Allows you to style label ex. `textTransform: uppercase;`
 | | | **Any other additional props will be passed down to `button` element (eg. onClick)**
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/button.png" style="margin:auto;width: 241px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/button.png" style="margin:auto;width: 241px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleButton.js */
@@ -391,7 +391,7 @@ List of available components:
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 **onChange** | func | null | Function called on checkbox state change with args **value, checkedState, label**
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/checkbox.png" style="margin:auto;width: 86px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/checkbox.png" style="margin:auto;width: 86px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleCheckbox.js */
@@ -437,7 +437,7 @@ List of available components:
 **label** | string | `Primary Color` | Text label with name of presented color
 **color** | string | `Styles.primaryColor` | Defines a color value of the component
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/color-card.png" style="margin:auto;width: 281px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/color-card.png" style="margin:auto;width: 281px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleColorCard.js */
@@ -489,7 +489,7 @@ You are able to use all supported icons from popular icon packs like **Font Awes
 
 List of icons:
 - [Material Design](https://material.io/icons/)
-- [Font Awesome](http://fontawesome.io/icons/)
+- [Font Awesome](https://fontawesome.io/icons/)
 
 Use their original name to get the icon you want. **For example: `FaTrash` or `MdError`**
 
@@ -536,7 +536,7 @@ Use their original name to get the icon you want. **For example: `FaTrash` or `M
 **onChange** | function | null | Called on its value update, the value passed as an argument
 | | | **Any other additional props will be passed down to `input` element**
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/input.png" style="margin:auto;width: 520px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/input.png" style="margin:auto;width: 520px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleInput.js */
@@ -577,7 +577,7 @@ Use their original name to get the icon you want. **For example: `FaTrash` or `M
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/label.png" style="margin:auto;width: 296px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/label.png" style="margin:auto;width: 296px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleLabel.js */
@@ -618,7 +618,7 @@ Use their original name to get the icon you want. **For example: `FaTrash` or `M
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/notification.png" style="margin:auto;width: 306px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/notification.png" style="margin:auto;width: 306px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleNotification.js */
@@ -665,7 +665,7 @@ Use their original name to get the icon you want. **For example: `FaTrash` or `M
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/progress-bar.png" style="margin:auto;width: 497px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/progress-bar.png" style="margin:auto;width: 497px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleProgressBar.js */
@@ -698,7 +698,7 @@ Use their original name to get the icon you want. **For example: `FaTrash` or `M
 **className** | string | null | Add `className` on container of component
 | | | **Any other props will be passed down to `radio input` element (eg. onChange)**
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/radio.png" style="margin:auto;width: 97px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/radio.png" style="margin:auto;width: 97px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleRadioGroup.js */
@@ -743,7 +743,7 @@ Use their original name to get the icon you want. **For example: `FaTrash` or `M
 **onChange** | function | null | Called when an active radio element has been changed, with radio value as an argument
 <br>
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/radio.png" style="margin:auto;width: 97px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/radio.png" style="margin:auto;width: 97px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleRadioGroup.js */
@@ -779,7 +779,7 @@ Use their original name to get the icon you want. **For example: `FaTrash` or `M
 
 ## RSSelect
 
-Our component is working with `react-select` ([documentation](http://jedwatson.github.io/react-select/)) which means that you can use all available functionality of `react-select`.
+Our component is working with `react-select` ([documentation](https://jedwatson.github.io/react-select/)) which means that you can use all available functionality of `react-select`.
 Our component `RSSelect` is currently made for standard use cases of `<Select>`. You can also pass image values into your `RSSelect` or change rounding of the image.
 
 > **`<RSSelect />` will pass down all `react-select` props** - for more info check [RSSelectOption](?id=rsselectoption).
@@ -796,7 +796,7 @@ Our component `RSSelect` is currently made for standard use cases of `<Select>`.
 **className** | string | null | Add `className` on container of component
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/select.png" style="margin:auto;width: 368px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/select.png" style="margin:auto;width: 368px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleSelect.js */
@@ -842,7 +842,7 @@ imageOption (option) {
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 | | | **Any other props will be passed down to `a` element**
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/social-button.png" style="margin:auto;width: 141px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/social-button.png" style="margin:auto;width: 141px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleSocialButton.js */
@@ -885,7 +885,7 @@ imageOption (option) {
 **style** | object, array | null | Allows you to style component ex. `backgroundColor: red;`
 **onChange** | func | null | Called on switch state change, **label** and **boolean state** passed as function args
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/switch.png" style="margin:auto;width: 344px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/switch.png" style="margin:auto;width: 344px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleSwitch.js */
@@ -935,7 +935,7 @@ imageOption (option) {
 **onChange** | function | null | Called on its value update, the value passed as an argument
 | | | **Any other additional props will be passed down to `textarea` element**
 
-<div style="display: block; text-align: center;"><img src="http://docs.reactsymbols.com/images/textarea.png" style="margin:auto;width: 521px;"/></div>
+<div style="display: block; text-align: center;"><img src="https://docs.reactsymbols.com/images/textarea.png" style="margin:auto;width: 521px;"/></div>
 
 ```reactjs
 /* Full real example of use you can find in examples/ExampleTextarea.js */
