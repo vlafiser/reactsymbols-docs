@@ -29,6 +29,9 @@ Support: [react@vlastimilfiser.com](mailto:react@vlastimilfiser.com)
 	</ul>
 </div>
 
+Developed and tested on React v16.2.0
+
+<br>
 <br>
 
 ## Folder structure
